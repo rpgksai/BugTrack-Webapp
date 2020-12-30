@@ -1,0 +1,90 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Defect Tracking System</title>
+
+    <link href="App_Themes/Theme1/HomeStyle.css" rel="stylesheet" />
+    <link href="App_Themes/jquery-ui.css" rel="stylesheet" />
+    <link href="App_Themes/Theme1/Menu1.css" rel="stylesheet" />
+    <link href="App_Themes/Theme1/GridStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/jscript" src="Scripts/jquery-ui.min.js"></script>
+    <script type="text/jscript">
+
+        $(document).ready(function () {
+            $("#datepicker").datepicker();
+        });
+
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="text-align: center">
+            <table align="center" width="100%">
+
+                <tr>
+                    <td align="center" style="border: 1px; border-bottom-color: Maroon; border-bottom-style: solid; width: 100%;">
+
+                        <ul id="menu">
+                            <li><a href="HomeLogin.aspx">Home</a></li>
+                            <li>
+                                <a href="#">Admin Page</a>
+                                <ul>
+                                    <li><a href="UserRegistration.aspx">User Registration</a></li>
+                                    <li><a href="NewProject.aspx">Add New Application</a></li>
+                                    <li><a href="ManageUsers.aspx">Add User/Application Reports</a></li>
+                                    <li><a href="AllProjects.aspx">Project Details</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Check Defect</a>
+                                <ul>
+                                    <li><a href="NewAppDefect.aspx">Add Defect/Application</a></li>
+                                    <li><a href="NewUserDefect.aspx">Add Defect</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li><a href="#">Reports</a>
+                            <ul>
+                                <li><a href="AdminHomePage.aspx">Defect Reports</a></li>
+                                <li><a href="DefectHistoryReport.aspx">DefectHistory Reports</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="Default.aspx">Logout</a></li>
+                        </ul>
+
+                    </td>
+                </tr>
+
+
+            </table>
+            <table width="100%">
+
+
+
+                <tr>
+                    <td>
+                        <div>
+
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <table align="center" width="100%">
+                <tr>
+                    <td align="center" style="height: 34px; border: 1px; border-top-color: Maroon; border-top-style: solid">
+                        <span style="font-size: 10pt; color: maroon; font-family: Verdana"><strong>&copy;Defect Tracking System </strong></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,133 @@
+﻿body {
+   margin:0; 
+  background-color:lavender;
+}
+
+
+.center {
+    margin: auto;
+    width: 0%;
+    border: 1px solid #74c7b9;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: darkgray;
+}
+
+h2 {
+    color: mediumblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Gridview {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+    color: black;
+}  
+
+.alignc {
+    text-align: center;
+    border: thick;
+}
+
+.btn1 {
+    background-color:darkgrey;
+    border: 1px solid yellow;
+    cursor: pointer;
+    color:black;
+    border-radius: 4px;
+}
+
+ .btn1:hover {
+        background-color:dimgrey;
+        box-shadow: 0 0 10px #FF99CC;
+        color: Menu;
+    }
+
+
+.container {
+     display: flex;
+    justify-content: center;
+}
+
+
+.child {
+    margin: 0 auto;
+}
+
+
+.placeHolderDiv {
+    width: 1000px;
+    height: 550px;
+    background-color:lavender;
+}
+
+.mainDisplay {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 450px;
+   background-color:lavender;
+}
+
+div.a {
+    text-align: center;
+}
+
+div.b {
+    text-align: left;
+}
+
+div.c {
+    text-align: right;
+}
+
+div.d {
+    text-align: justify;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.ColorStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    //color:black;
+}
+
+.ColorHeaderStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    color: #393939;
+}
+
+
+
+.Heading{
+    height: 35px;
+    padding: 0 35px;
+    color:white;
+    text-transform: uppercase;
+    font: bold 12px/35px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+   
+}

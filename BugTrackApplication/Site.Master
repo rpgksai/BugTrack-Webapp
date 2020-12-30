@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BugTrackApplication.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Web Tracker Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="App_Themes/Theme1/HomeStyle.css" rel="stylesheet" />
+    <link href="App_Themes/Theme1/Menu1.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+
+    <form runat="server">
+       
+        <div>
+
+            <ul id="menu">
+                 <li><a ></a></li>
+              
+                <li><a><strong>Bug Tracker</strong></a></li>
+                                
+            </ul>
+        </div>
+
+        <div >
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+
+
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer class="alignc">
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>
